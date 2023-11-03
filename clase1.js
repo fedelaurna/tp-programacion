@@ -1,10 +1,9 @@
-
 /1/
 let nombre = prompt("ingrese su nombre")
 
 if ((nombre == 'Santino') || (nombre == 'Nahuel'))
 {
-    alert ('Bienvenido, desaprobado')
+    alert ('Bienvenido, santino/nahuel')
 } else{
     alert ('Bienvenido alumn@')
 }
@@ -44,12 +43,15 @@ if ((edadPersona >=6) && ( edadPersona <= 11))
 
        /4/
     let dias=prompt("ingrese un dia para saber si es laboral o no ")
-     if( (dias== "sabado") || ("domingo")){
-        alert("es fin de semana ")
-     }else{
-        alert("es un dia laboral")
-     }
+    
 
+    if ("domingo"){
+      alert ("dia no laboral ")}
+      else{ 
+          alert("dia laborable")
+      }
+     
+    
 /5/
 let contraseña =prompt("ingrese la contraseña")
  
@@ -82,17 +84,18 @@ if ((nota >=80) && ( nota <= 100))
    
 /9/
 let semana =prompt("ingrese un numero del 1 al 7 para indicar un dia")
-if(semana = 1){
+
+if(semana == 1){
     alert("es lunes ")
-}else if(semana = 2){
+}else if(semana == 2){
     alert("es martes")
-}else if(semana = 3){
+}else if(semana == 3){
     alert("es miercoles")
-}else if(semana = 4 ){
+}else if(semana == 4 ){
     alert("es jueves")
-}else if(semana= 5){
+}else if(semana== 5){
     alert("es viernes")
-}else if(semana=6){
+}else if(semana==6){
     alert("es sabado")
 }else {
     alert("es domingo")
@@ -111,3 +114,37 @@ if(edad ){
 }else{
 
 }
+
+/* respuestas correctas 
+
+function catNotas(nota)
+{
+    if(nota < 60){
+        return "EP"
+    }
+    else if((nota > 60) && (nota<80)){
+        return "S"
+    }else{
+        return "MS"
+    }
+
+}
+
+4
+function diasLaborables(dias)
+{
+if((dias=="sabado") || (dias =="domingo"))
+{
+return "dias no laborales"
+}else{
+return "dias laborales"
+}
+
+let esLaborales = prompt("ingrese un dia")
+alert(diasLaborables(esLaborables))
+
+
+
+
+
+*/
